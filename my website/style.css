@@ -1,0 +1,23 @@
+/* Custom Stylesheet เพื่อเพิ่มความสวยงาม */
+body {
+  font-family: 'Sarabun', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ปรับ Carousel ให้รูปไม่สูงเกินไป */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Hover Effect สำหรับ Card */
+.card {
+  transition: transform 0.2s ease, shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
